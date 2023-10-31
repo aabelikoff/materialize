@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* --- Common styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+p,
+i,
+h2,
+h3 {
+  color: #555555;
+}
+p {
+  font-size: 16px;
+  padding-top: 30px;
+}
+a {
+  font-size: 16px;
+}
+a.up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(110, 104, 104, 0.5);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.up i {
+  font-size: 30px;
+  color: white;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 80px;
+}
+section {
+  padding: 50px 0;
+}
+/* --- Common Utility styles --- */
+.white-color {
+  color: #fff;
+}
+.blue-color {
+  color: #3a97d5;
+}
+.invert {
+  filter: invert(100%);
+}
+/* add paddings left and right for block-wrapper*/
+.ful-width-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* --- Header styles --- */
+.title {
+  font-size: 35px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.title::after {
+  content: '';
+  width: 50%;
+  position: absolute;
+  border-bottom: 1px solid #c7c6c6;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.white-color::after {
+  border-color: #fbfdff;
+}
+.item-title {
+  font-size: 30px;
+}
+/* --- Navigation --- */
+nav {
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+}
+.logo {
+  width: 50px;
+}
+nav .brand-logo {
+  top: 50%;
+  transform: translate(-50%, -40%);
+}
+nav ul a {
+  color: rgb(171, 170, 170);
+}
+nav ul.left {
+  margin-left: 5%;
+}
+/* --- Header --- */
+header {
+  text-align: center;
+  background-image: url(../img/header_bg.jpg);
+  padding: 150px 0 200px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 55%;
+}
+.header-logo {
+  width: 85px;
+}
+/* --- Service --- */
+.service {
+  background-color: #f5f5f5;
+  padding: 40px 0 50px 0;
+  text-align: center;
+}
+.service-item > i.fa-solid {
+  font-size: 4.4rem;
+}
+/* --- Slogan section (devides page) */
+.slogan {
+  text-align: center;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.slogan p {
+  font-size: 22px;
+  font-weight: 200;
+}
+/* --- Backgrounds for slogans --- */
+.boundaries {
+  background-image: url(../img/bg/divider1.jpg);
+}
+.interaction {
+  background-image: url(../img/bg/divider2.jpg);
+}
+.solve-problems {
+  background-image: url(../img/bg/divider3.jpg);
+}
+.emotional-connection {
+  background-image: url(../img/bg/divider4.jpg);
+}
+.address {
+  background-image: url(../img/bg/divider6.jpg);
+}
+/* --- Mobile section --- */
+.photo-block {
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+}
+/* --- Team section --- */
+.team-member {
+  margin-top: 1.52rem;
+}
+.title-name {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 700;
+}
+.social-media-links a i {
+  font-size: 22px;
+  color: #3a97d5;
+  margin-right: 5px;
+}
+/* --- Hr --- */
+.hr {
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.hr-text > .item-title {
+  margin: 0;
+  text-transform: capitalize;
+}
+.hr-text > p {
+  padding-bottom: 30px;
+}
+#contact-us {
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+/* --- Portfolio --- */
+.portfolio .img-container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.folio {
+  object-fit: contain;
+}
+.img-item {
+  width: 32%;
+  position: relative;
+  cursor: pointer;
+}
+.explore {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.img-item:hover .explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.explore i {
+  font-size: 30px;
+}
+/* --- Storytellers --- */
+.blog-block {
+  margin-top: 60px;
+  background-color: #f5f5f5;
+}
+.blog-item {
+  display: flex;
+}
+.author {
+  background-color: #2b2b2b;
+  width: 28%;
+  text-align: center;
+  padding: 10px 5px;
+}
+.story .item-title {
+  margin-bottom: 0;
+}
+.author > p {
+  color: rgb(171, 170, 170);
+}
+.author > img {
+  width: 50%;
+}
+.story > .item-title,
+.name,
+.date {
+  text-transform: capitalize;
+}
+.name {
+  font-size: 16px;
+}
+.date {
+  font-size: 10px;
+}
+.story {
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.story p:last-of-type {
+  padding-bottom: 30px;
+}
+.post-link {
+  line-height: 16px;
+}
+.post-link .material-icons {
+  margin-right: 5px;
+}
+/* --- Footer --- */
+footer .social-media-links {
+  font-size: 22px;
+  padding-top: 30px;
+  color: #3698db;
+}
+.contacts {
+  padding-top: 30px;
+}
+.contacts li i {
+  width: 20px;
+  text-align: center;
+  margin-right: 5px;
+}
+form[name='subscribe'] input {
+  border: 1px solid #9e9e9e;
+  margin: 20px 0 0;
+  padding: 10px;
+  height: 40px;
+  color: #555;
+  width: 80%;
+  outline: none;
+}
+form[name='subscribe'] input:focus {
+  box-shadow: 0 0 3px #9e9e9e;
+}
+#subscribe {
+  margin-top: 20px;
+  text-transform: capitalize;
+  display: block;
+}
+.copyright {
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+/* --- Mediaqueries --- */
+@media screen and (max-width: 945px) {
+  #_contact .item-title {
+    min-height: 66px;
+  }
+  .author {
+    width: 28%;
+  }
+  .story {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  p,
+  a {
+    font-size: 14px;
+  }
+  .title-name {
+    font-size: 18px;
+  }
+  .ful-width-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .img-item {
+    width: 49%;
+  }
+  .title::after {
+    content: '';
+    width: 65%;
+  }
+  .story .item-title {
+    min-height: 66px;
+  }
+  .author {
+    width: 30%;
+  }
+  .story {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 723px) {
+  .title-name {
+    font-size: 14px;
+  }
+  .ful-width-padding,
+  .slogan {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .title::after {
+    content: '';
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  a.up {
+    width: 40px;
+    height: 40px;
+  }
+  header {
+    padding: 100px 10px;
+  }
+  .service {
+    margin-bottom: -20px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .item-title {
+    font-size: 28px;
+  }
+  .about p,
+  .brand-voice p {
+    text-align: justify;
+  }
+  .portfolio .img-container {
+    padding: 0;
+  }
+  .story .item-title {
+    min-height: auto;
+  }
+  .author:first-of-type,
+  .story:first-of-type {
+    margin-bottom: 20px;
+  }
+  .contact {
+    text-align: center;
+  }
+  #_contact .item-title {
+    min-height: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  #subscribe {
+    margin: 20px auto;
+  }
+  ul > li {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+  }
+  .title::after {
+    content: '';
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hr {
+    background-color: #f5f5f5;
+  }
+}
+@media screen and (max-width: 500px) {
+  .img-item {
+    width: 80%;
+  }
+}
